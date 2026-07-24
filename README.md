@@ -60,8 +60,10 @@ MyBatis は Spring Boot 4 に対応したバージョンを使用します。Mod
     </dependency>
 ```
 
-※ 2026/5/30 現在、下記の症状がありますが動作には問題ありません
-- modelmapper-spring 3.2.6 を使うと起動時に「A terminally deprecated method in sun.misc.Unsafe has been called」と Warning がでる
+※ 2026/7/24 現在、modelmapper-spring 3.2.6 を使用すると起動時に「A terminally deprecated method in sun.misc.Unsafe has been called」と Warning がでます。動作に支障はありませんが、この問題は対処されずに長らく放置されたままになっているため、使用できなくなる可能性があります。
+
+ModelMapper の代替としては [MapStruct](https://mapstruct.org/) があるので、ポートフォリオ作成時にはそちらの使用も検討してください。
+使用例は[こちら](https://github.com/shibamirai/todolist-springboot4)
 
 ## 13 章 AOP
 
